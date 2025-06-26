@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #E9DBC7;
+  color: #3E2E1F;
+}
+
+header {
+  background-color: #C47A5A;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FEE7D2;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.bloque {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.imagen {
+  flex: 1;
+  min-width: 300px;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenido {
+  flex: 2;
+  padding: 20px;
+}
+
+.contenido h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #6E8B5C;
+  margin: 0;
+}
+
+footer {
+  background-color: #3E2E1F;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-footer {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.btn-footer:hover {
+  color: #D9BFA3;
+}
+
+/* Estilos para desplegable */
+.titulo-desplegable {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.flecha {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.texto-desplegable {
+  display: none;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.titulo-desplegable.activo .flecha {
+  transform: rotate(180deg);
+}
